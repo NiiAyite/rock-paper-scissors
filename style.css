@@ -122,6 +122,34 @@ footer {
     border: 1px solid #fff;
     border-radius: 5px;
     position: relative;
-    bottom: 32rem;
-    left: 55rem;
+    bottom: 63rem;
+    left: 48rem;
+    cursor: pointer;
+}
+
+.rule_popup {
+    background-color: #fff;
+    width: fit-content;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    position: relative;
+    bottom: 70rem;
+    transition: all 400ms ease-in-out;
+    opacity: 0;
+}
+
+.rule_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rule_popup h3 {
+    color: hsl(229, 25%, 31%);
+    font-size: 2rem;
+}
+
+.rule_popup img {
+    font-family: "Barlow Semi-Condensed";
+    cursor: pointer;
 }
