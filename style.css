@@ -3,9 +3,6 @@
     src: url("./barow-semi-condensed/BarlowSemiCondensed-Medium.ttf");
 }
 
-:root {
-    --paper-grad: radial-gradient(hsl(230, 89%, 62%),hsl(230, 89%, 65%));
-}
 body {
     background: radial-gradient(circle at 100%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     color: #fff;
@@ -14,6 +11,7 @@ body {
     align-items: center;
     font-family: "Barlow Semi-Condensed";
     height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -53,6 +51,19 @@ header {
 
 .chain {
     margin-top: 10.5rem;
+    position: relative;
+    z-index: 0;
+}
+
+.paper_border {
+    background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 7px 0 0 hsl(230, 55%, 25%);
+    position: relative;
+    bottom: 24rem;
+    right: 8rem;
 }
 
 .paper {
@@ -60,10 +71,57 @@ header {
     width: fit-content;
     padding: 3rem;
     border-radius: 50%;
-    border: ;
+    box-shadow: 0 -7px 0 0 #bcbcbc;
 }
 
 .paper img {
     width: 59px;
     height: 59px;
+}
+
+.scissors_border {
+    background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 7px 0 0 hsl(39, 55%, 25%);
+    position: relative;
+    bottom: 38rem;
+    left: 13rem;
+}
+
+.scissors {
+    background-color: #fff;
+    width: fit-content;
+    padding: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 -7px 0 0 #bcbcbc;
+}
+
+.rock_border {
+    background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 7px 0 0 hsl(349, 55%, 25%);
+    position: relative;
+    bottom: 35rem;
+    left: 3rem;
+}
+
+.rock {
+    background-color: #fff;
+    width: fit-content;
+    padding: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 -7px 0 0 #bcbcbc;
+}
+
+footer {
+    padding: .5rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 32rem;
+    left: 55rem;
 }
