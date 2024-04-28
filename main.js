@@ -1,5 +1,9 @@
-const rulePopup = document.getElementById('popup');
+const rulePopup = document.querySelector("#popup");
 
-function open() {
-    rulePopup.style.opacity = 0.5;
+const open = () => {
+    rulePopup.style.opacity = 1;
+}
+
+const close = () => {
+    alert("it works!");
 }

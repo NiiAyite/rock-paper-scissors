@@ -135,7 +135,7 @@ footer {
     position: relative;
     bottom: 70rem;
     transition: all 400ms ease-in-out;
-    opacity: 0;
+    opacity: 1;
 }
 
 .rule_title {
